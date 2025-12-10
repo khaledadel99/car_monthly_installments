@@ -43,8 +43,8 @@ st.markdown("""
 <style>
     /* Main App Styling */
     .stApp {
-        background: linear-gradient(to right, #141e30, #243b55);
-        color: #ffffff;
+        background-color: #ffffff;
+        color: #31333F;
         direction: rtl; /* Set functionality to Right-to-Left */
     }
     
@@ -58,7 +58,7 @@ st.markdown("""
     .main-title {
         font-size: 3.5rem;
         font-weight: 800;
-        background: -webkit-linear-gradient(#00ADB5, #EEEEEE);
+        background: -webkit-linear-gradient(#00ADB5, #31333F);
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
         text-align: center;
@@ -66,12 +66,11 @@ st.markdown("""
     }
     
     .card {
-        background-color: rgba(255, 255, 255, 0.05);
-        backdrop-filter: blur(10px);
+        background-color: #f8f9fa;
         padding: 25px;
         border-radius: 15px;
-        border: 1px solid rgba(255, 255, 255, 0.1);
-        box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+        border: 1px solid #dee2e6;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
         margin-bottom: 20px;
         transition: transform 0.3s ease;
     }
@@ -83,28 +82,28 @@ st.markdown("""
 
     .metric-label {
         font-size: 1.1rem;
-        color: #ccc;
+        color: #666;
     }
 
     .metric-value {
         font-size: 2.5rem;
         font-weight: bold;
         color: #00ADB5;
-        text-shadow: 0 0 10px rgba(0, 173, 181, 0.5);
+        text-shadow: none;
     }
     
-    /* Streamlit Input Styling Override */
+    /* Streamlit Input Styling Override for Light Mode */
     .stTextInput > div > div > input, .stNumberInput > div > div > input, .stSelectbox > div > div > div {
-        background-color: rgba(255, 255, 255, 0.1);
-        color: white;
+        background-color: #ffffff;
+        color: #31333F;
         border-radius: 8px;
-        border: 1px solid rgba(255, 255, 255, 0.2);
+        border: 1px solid #ced4da;
     }
     
     /* Fix Slider in RTL */
     .stSlider {
         direction: ltr;
-        text-align: right; /* Keep label aligned right if possible, though streamlit handles labels separately */
+        text-align: right; 
     }
 </style>
 """, unsafe_allow_html=True)
